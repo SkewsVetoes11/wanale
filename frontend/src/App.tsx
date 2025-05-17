@@ -3,6 +3,7 @@ import logo from './assets/images/logo-universal.png';
 import './App.css';
 import { Greet } from "../wailsjs/go/main/App.js";
 import { NavLink } from "react-router";
+import { Button } from './stories/Button.js';
 function App() {
     const [resultText, setResultText] = useState("Please enter your name below 👇");
     const [name, setName] = useState('');
@@ -19,8 +20,9 @@ function App() {
             <div id="result" className="result">{resultText}</div>
             <div id="input" className="input-box">
                 <input id="name" className="input" onChange={updateName} autoComplete="off" name="input" type="text" />
-                <button className="btn" onClick={greet}>Greet</button>
+
             </div>
+            <Button onClick={greet} label='Click Me!' size='large' backgroundColor='#1ecb9a'></Button>
         </div>
     )
 }
