@@ -2,9 +2,9 @@ import { useState } from 'react';
 import logo from './assets/images/logo-universal.png';
 import './App.css';
 import { Greet } from "../wailsjs/go/main/App.js";
-import { NavLink } from "react-router";
-function App() {
-    const [resultText, setResultText] = useState("Please enter your name below 👇");
+
+function Foo() {
+    const [resultText, setResultText] = useState("Pleadfdfddse enter your name below 👇");
     const [name, setName] = useState('');
     const updateName = (e: any) => setName(e.target.value);
     const updateResultText = (result: string) => setResultText(result);
@@ -15,7 +15,7 @@ function App() {
 
     return (
         <div id="App">
-            <NavLink to={'/foo'}><img src={logo} id="logo" alt="logo" /></NavLink>
+            <img src={logo} id="logo" alt="logo" />
             <div id="result" className="result">{resultText}</div>
             <div id="input" className="input-box">
                 <input id="name" className="input" onChange={updateName} autoComplete="off" name="input" type="text" />
@@ -25,4 +25,4 @@ function App() {
     )
 }
 
-export default App
+export default Foo
