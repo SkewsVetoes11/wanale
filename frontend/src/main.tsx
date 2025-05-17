@@ -1,6 +1,6 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-import './style.css'
+// import './style.css'
 import App from './App.js'
 import Foo from './Foo.js'
 import { BrowserRouter, Routes, Route } from "react-router";
