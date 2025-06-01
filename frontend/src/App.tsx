@@ -1,12 +1,9 @@
-import { useState } from 'react';
 import './App.css';
-import { Greet } from "../wailsjs/go/main/App.js";
-import { NavLink } from "react-router";
-import { Page } from './stories/Page.js';
+import NotePage from './stories/Wanale/NotePage.js';
 function App() {
   return (
     <>
-      <h1>fff</h1>
+      <NotePage />
     </>
   )
 }

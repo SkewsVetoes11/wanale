@@ -1,5 +1,10 @@
+@import "tailwindcss";
+
 #app {
     height: 100vh;
     text-align: center;
     background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
